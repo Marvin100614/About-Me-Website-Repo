@@ -1,0 +1,261 @@
+#services{
+    padding: 5% 0px 10% 10%;
+    width: 100%;
+    height: 80vh;
+    background-color: #2D4059;
+}
+#services h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    text-decoration: underline;
+    text-decoration-color: #FF5722;
+    margin-bottom: 50px;
+}
+#services h1 span{
+    color: #FF5722;
+}
+.body-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+.body-services .box4{
+    width: 320px;
+    height: 300px;
+    background-color: #222831;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .7); 
+    position: relative;
+}
+.box4 h2{
+    margin: 0;
+    font-size: 50px;
+    color: rgb(130, 107, 107);
+    text-align: center;
+    flex-wrap: nowrap;
+}
+.box4 .p-text{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 5%;
+    color: gray;
+    text-shadow: 2px 2px 2px rgba(0,0,0, .8);
+    margin-top: 5px;
+    font-size: 20px;
+}
+.box4 button{
+    padding: 7px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: lightgray;
+}
+.box4 button:hover{
+    background-color: #FF5722;
+    transition: .4s;
+    color: white;
+}
+.button-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*--- HTML POP-UP MESSAGES ---- */
+.html-readmore{
+    z-index: 1;
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    background-color: #222831;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .5);
+    opacity: 1;
+    transition: .4s;
+}
+.html-readmore h2{
+    margin: 0;
+    font-size: 50px;
+    color: rgb(130, 107, 107);
+    text-align: center;
+}
+.html-readmore p{
+    font-size: 22px;
+    text-align: left;
+    margin: 5%;
+    color: lightgray;
+    text-shadow: 2px 2px 2px rgba(0,0,0, .8); 
+}
+.closing-logo, .closing-logo2, .closing-logo3{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.closing-logo:hover, .closing-logo2:hover, .closing-logo3:hover{
+    color: #FF5722;
+}
+.active.html-readmore, .active.java-readmore, .active.css-readmore{
+    opacity: 0;
+    visibility: hidden;
+}
+.active.body-services{
+    filter: blur(5px) brightness(.7);
+}
+
+/*--- JAVASCIRPT POP-UP MESSAGES ---- */
+.java-readmore{
+    z-index: 1;
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    background-color: #222831;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .5);
+    opacity: 1;
+    transition: .4s;
+}
+.java-readmore h2{
+    margin: 0;
+    font-size: 50px;
+    color: rgb(130, 107, 107);
+    text-align: center;
+    margin-top: 35px;
+}
+.java-readmore p{
+    font-size: 22px;
+    text-align: left;
+    margin: 5%;
+    color: lightgray;
+    text-shadow: 2px 2px 2px rgba(0,0,0, .8); 
+}
+/*--- CSS POP-UP MESSAGES ---- */
+.css-readmore{
+    z-index: 1;
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    background-color: #222831;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0, .5);
+    opacity: 1;
+    transition: .4s;
+}
+.css-readmore h2{
+    margin: 0;
+    font-size: 50px;
+    color: rgb(130, 107, 107);
+    text-align: center;
+}
+.css-readmore p{
+    font-size: 22px;
+    text-align: left;
+    margin: 5%;
+    color: lightgray;
+    text-shadow: 2px 2px 2px rgba(0,0,0, .8); 
+}
+
+/*----- RESPONSIVE SCREEN ----- */
+
+@media (max-width: 705px) {
+    #services{
+        height: 100vh;
+    }
+    #services h1{
+        font-size: 20px;
+        margin: 20px;
+    }
+    .body-services{
+       display: grid;
+       justify-content: center;
+    }
+    .body-services .box4{
+        width: 250px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    .box4 h2{
+        font-size: 26px;
+    }
+    .box4 .p-text{
+        font-size: 14px;
+    }
+    .box4 button{
+        padding: 1px;
+        font-size: 10px;
+    }
+    .html-readmore,
+    .java-readmore,
+    .css-readmore{
+        width: 350px;
+        height: 250px;
+    }
+    .html-readmore h2,
+    .java-readmore h2,
+    .css-readmore h2{
+        font-size: 30px;
+    }
+    .html-readmore p,  
+    .java-readmore p,
+    .css-readmore p{
+        font-size: 16px;
+    }
+    .closing-logo, .closing-logo2, .closing-logo3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 706px){
+    #services{
+        padding-left: 3%;
+    }
+    .body-services{
+       padding-right: 3%;    
+     }
+    .body-services .box4{
+        width: 240px;
+        height: 260px;
+        margin: 10px;
+    }
+    .box4 h2{
+        font-size: 30px;
+    }
+    .box4 .p-text{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1001px){
+    .body-services .box4{
+       margin: 2%;
+       width: 320px;
+       height: 330px;
+    }
+    #services{
+        padding-left: 3%;
+    }
+    .body-services{
+       padding:  0px 5%;  
+     }
+     .box4 h2{
+        font-size: 50px;
+    }
+    .box4 .p-text{
+        font-size: 20px;
+    }
+    #services h1{
+        margin: 0;
+    }
+}
