@@ -1,7 +1,7 @@
 #contacts{
     padding: 2% 0px 10% 10%;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 #contacts h1{
@@ -27,6 +27,7 @@
 .body-contact2{
     padding-right: 10%;
     text-align: center;
+    
 }
 .body-contact2 p {
     color: lightgray;
